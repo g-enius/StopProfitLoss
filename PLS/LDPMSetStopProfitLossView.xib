@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0zQ-YA-9JU" userLabel="view" customClass="LDPMSetStopProfitLossView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-tH-UVj" userLabel="checkbox">
+                    <rect key="frame" x="14" y="5" width="19" height="19"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="thK-Cf-QKZ"/>
+                        <constraint firstAttribute="height" constant="19" id="vmA-1G-v1L"/>
+                    </constraints>
+                    <state key="normal" image="PLS_checkbox_checked">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="enableOrDisableTheView:" destination="0zQ-YA-9JU" eventType="touchUpInside" id="eRx-rd-5gP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="止损" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziy-Hv-wdn">
+                    <rect key="frame" x="42" y="-1" width="30" height="19"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="hks-2y-CD5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hks-2y-CD5"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="+1%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkn-q8-AMS">
+                    <rect key="frame" x="157" y="34" width="23" height="15"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="较当前价涨 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVo-ie-qfV">
+                    <rect key="frame" x="88" y="34" width="64" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="Kcg-8u-5jY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Kcg-8u-5jY"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="700" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="不设定" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fBo-Xm-BAx" customClass="UIStepperTextField">
+                    <rect key="frame" x="88" y="-1" width="219" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="136" id="gHE-pw-Cr4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="gHE-pw-Cr4"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="触发价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2P-Oi-EmU">
+                    <rect key="frame" x="39" y="18" width="36" height="15"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNC-h6-quT">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="49"/>
+                    <animations/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bkn-q8-AMS" secondAttribute="trailing" constant="30" id="3cJ-NZ-pot"/>
+                <constraint firstItem="ziy-Hv-wdn" firstAttribute="centerY" secondItem="0zQ-YA-9JU" secondAttribute="centerY" constant="-6" id="6hC-PR-VZf"/>
+                <constraint firstAttribute="bottom" secondItem="DVo-ie-qfV" secondAttribute="bottom" id="7Ef-vm-ddz"/>
+                <constraint firstItem="W2P-Oi-EmU" firstAttribute="top" secondItem="ziy-Hv-wdn" secondAttribute="bottom" id="ANX-bs-8gS"/>
+                <constraint firstItem="uNC-h6-quT" firstAttribute="leading" secondItem="0zQ-YA-9JU" secondAttribute="leading" id="B6V-lJ-GU8"/>
+                <constraint firstItem="fBo-Xm-BAx" firstAttribute="leading" secondItem="0zQ-YA-9JU" secondAttribute="leading" constant="88" id="DrO-if-kTA"/>
+                <constraint firstItem="bfs-tH-UVj" firstAttribute="top" secondItem="0zQ-YA-9JU" secondAttribute="top" constant="5" id="E4y-BI-O87"/>
+                <constraint firstItem="ziy-Hv-wdn" firstAttribute="top" secondItem="fBo-Xm-BAx" secondAttribute="top" id="MOc-9C-CRK"/>
+                <constraint firstItem="uNC-h6-quT" firstAttribute="trailing" secondItem="W2P-Oi-EmU" secondAttribute="trailing" id="Mxa-yq-dJu"/>
+                <constraint firstItem="fBo-Xm-BAx" firstAttribute="leading" secondItem="uNC-h6-quT" secondAttribute="trailing" id="NBU-j2-MZA"/>
+                <constraint firstItem="bfs-tH-UVj" firstAttribute="leading" secondItem="0zQ-YA-9JU" secondAttribute="leading" constant="14" id="NyW-Dt-Z45"/>
+                <constraint firstAttribute="trailing" secondItem="fBo-Xm-BAx" secondAttribute="trailing" constant="13" id="P2m-fQ-r0w"/>
+                <constraint firstItem="bkn-q8-AMS" firstAttribute="leading" secondItem="DVo-ie-qfV" secondAttribute="trailing" constant="5" id="PO1-bi-94n"/>
+                <constraint firstAttribute="bottom" secondItem="uNC-h6-quT" secondAttribute="bottom" id="QBC-EO-ca5"/>
+                <constraint firstItem="fBo-Xm-BAx" firstAttribute="centerY" secondItem="0zQ-YA-9JU" secondAttribute="centerY" id="TMC-5w-lt3"/>
+                <constraint firstItem="bfs-tH-UVj" firstAttribute="centerY" secondItem="0zQ-YA-9JU" secondAttribute="centerY" id="YF8-5B-QNA"/>
+                <constraint firstItem="bkn-q8-AMS" firstAttribute="centerY" secondItem="DVo-ie-qfV" secondAttribute="centerY" id="YfF-x7-foy"/>
+                <constraint firstItem="W2P-Oi-EmU" firstAttribute="leading" secondItem="bfs-tH-UVj" secondAttribute="trailing" constant="6" id="cXv-o0-j3e"/>
+                <constraint firstItem="ziy-Hv-wdn" firstAttribute="leading" secondItem="bfs-tH-UVj" secondAttribute="trailing" constant="9" id="cvp-dB-ZRb"/>
+                <constraint firstItem="ziy-Hv-wdn" firstAttribute="centerY" secondItem="bfs-tH-UVj" secondAttribute="centerY" id="di4-FH-exw"/>
+                <constraint firstAttribute="height" constant="55" id="iT9-2q-jmc"/>
+                <constraint firstItem="fBo-Xm-BAx" firstAttribute="centerY" secondItem="bfs-tH-UVj" secondAttribute="centerY" id="nms-fm-Grf"/>
+                <constraint firstItem="DVo-ie-qfV" firstAttribute="leading" secondItem="fBo-Xm-BAx" secondAttribute="leading" id="oN2-SH-VmE"/>
+                <constraint firstItem="uNC-h6-quT" firstAttribute="top" secondItem="0zQ-YA-9JU" secondAttribute="top" id="p5C-xb-FRK"/>
+                <constraint firstItem="ziy-Hv-wdn" firstAttribute="leading" secondItem="bfs-tH-UVj" secondAttribute="trailing" constant="16" id="vRj-cn-kBC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="iT9-2q-jmc"/>
+                    <exclude reference="YF8-5B-QNA"/>
+                    <exclude reference="6hC-PR-VZf"/>
+                    <exclude reference="di4-FH-exw"/>
+                    <exclude reference="vRj-cn-kBC"/>
+                    <exclude reference="NBU-j2-MZA"/>
+                    <exclude reference="TMC-5w-lt3"/>
+                    <exclude reference="3cJ-NZ-pot"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="checkbox" destination="bfs-tH-UVj" id="OC5-0r-uLO"/>
+                <outlet property="inputTextField" destination="fBo-Xm-BAx" id="Xeh-Sp-hy6"/>
+                <outlet property="maskButton" destination="uNC-h6-quT" id="kOt-yO-7uV"/>
+                <outlet property="profitInfoLabel" destination="DVo-ie-qfV" id="OOS-8F-vfS"/>
+                <outlet property="profitLabel" destination="bkn-q8-AMS" id="f7N-Kb-zCO"/>
+                <outlet property="profitLossLabel" destination="ziy-Hv-wdn" id="ire-jc-8cf"/>
+            </connections>
+            <point key="canvasLocation" x="832.5" y="372"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PLS_checkbox_checked" width="18" height="18"/>
+    </resources>
+</document>
